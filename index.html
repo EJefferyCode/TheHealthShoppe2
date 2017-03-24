@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>The Health Shoppe</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Harmattan|Patrick+Hand|Rokkitt" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="container">
+    <div id="header">
+        <ul> 
+            <li><a href="#">Home</a></li> <span>|</span>
+            <li><a href="#">Shop</a></li> <span>|</span>
+            <li><a href="#" id="store">Store Locator</a></li>
+            <h5>The Health Shoppe of <span>New York</span> and <span>New Jersey</span></h5>
+            <button id="one">Sign Up</button>
+            <button id="two">Sign In</button>
+        </ul>
+    </div>
+        
+        <div id="modal1" title="Sign Up! It's Free!">
+            
+            <div class="imgcontain">
+                <h2>Create Your Account! It's Free</h2>
+            <img src="img/logo.jpg" alt="our logo" class="logo"/>
+            </div><br>
+            
+            <div class="container">
+            <label><b>Email</b></label><br>
+            <input type="email" placeholder="Enter Email" name="email" class="email" required/><br><br>
+                
+            <label><b>Password</b></label><br>
+            <input type="password" placeholder="Create Password" name="pwd" class="pwd" required/><br><br>
+            
+            <button type="submit" class="welc">Welcome To The Health Shoppe</button><br>
+                <h2>I agree to the <a href="#">Terms and Conditions</a> of this site.</h2>
+                <input type="checkbox" checked="checked" id="check" required/>
+            </div>
+                
+            
+            <!---Returning members--->
+            
+            <div id="modal2" title="Welcome Back!">
+            <h2>Log Into Your Account!</h2>
+            <div class="imgcontain">
+            <img src="img/logo.jpg" alt="our logo" class="logo"/>
+            </div><br>
+                
+            <label><b>Email</b></label><br>
+            <input type="email" id="email" placeholder="Enter Email" name="email" class="email" required/><br><br>
+            
+            <label><b>Password</b></label><br>
+            <input type="password" id="password" placeholder="Enter Password" name="pwd" class="pwd" required/><br><br>
+                
+            
+            <button type="submit" class="welc" id="go" onclick="validate()">Go</button>
+            <span class="psw"><a href="#">Forgot Password?</a></span>
+            </div>
+            
+        </div>
+        
+        <div id="nynj">
+    <a href="#">New York</a><br>
+    <a href="#">New Jersey</a>
+    </div>
+        
+        
+        <div id="first">
+            <h1>The Health Shoppe ~ Founded In 1997</h1>
+        </div>  
+            
+            <aside id="asi">
+                <h3>Latest News</h3>
+                <a href="#">The Health Shoppe Soho<br>Gets A New Look</a><br><br>
+                <a href="#">We are giving away $150.00<br>worth of products to 10<br>lucky members this month</a><br><br>
+                <a href="#">The Health Shoppe Is Coming<br>To Canada</a>
+            </aside>
+        
+        <div id="main">
+            <h1>The Health Shoppe ~ New York and New Jersey's<br>Number One Place For Health and Beauty Goods!</h1>
+        <h4>Become a <a href="#" id="link">member today</a> and save up to 20% on products.</h4>
+        <img src="img/vitamins2.jpg"/>
+        <img src="img/vitamins.jpg"/>
+        <img src="img/vitamin3.jpg"/>
+        </div>
+        
+        <div id="middle">
+            <img src="/img/salad.jpg"/>
+            <figcaption><i>Jane Aliari Enjoys A Salad In A Way Only She Can</i></figcaption>
+            <aside id="asi2">
+               <h1><a href="#">We Catch Up With Author Jane Aliari</a></h1>
+               <p>This week, Author and self-assigned <i>"Salad Sister"</i> Jane Aliari sat down with us at The Health Shoppe TriBeCa to discuss her new book, <i>"100 Ways To Do A Salad"</i>. She discusses her recent media frenzy, and how determined she is to make salad "sexy again". <a href="#">Full Story</a></p>
+            </aside>
+        </div>
+        
+        <div id="end">
+            <nav class="menu">
+            <h1>Health Corner</h1>
+            <ul>
+                <li><a href="">Get The Latest Advice From The Community</a></li>
+                <li><a href="">Participate In The Forums</a></li>
+            </ul>
+            </nav>
+            
+            <nav id="topics">
+            <button id="women">Women's Health</button>
+                
+            <button id="men">Men's Health</button>
+               
+            <button id="other">Other</button>  
+            </nav>
+        </div>
+        
+    
+    <footer>
+        <div id="wrapper">
+            <ul>
+                <li>The Health Shoppe: Corporate Office  New York City</li>
+                <li>46 Park Avenue - 7th Floor</li>
+                <li>New York, NY 10010</li>
+                <li><a href="mailto:nyc@healthshoppe.com">nyc@healthshoppe.com</a></li>
+            </ul>
+            <ul>
+                <li>The Health Shoppe: Corporate Office  New Jersey</li>
+                <li>23 Moore Street - 6th Floor</li>
+                <li>Hoboken, NJ 07080</li>
+                <li><a href="mailto:hoboken@healthshoppe.com">hoboken@healthshoppe.com</a></li>
+            </ul>
+            <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Franchise</a></li>
+            <h4>&copy;The Health Shoppe 2018</h4>
+            </ul>
+        </div>
+    </footer>
+    
+<!------------SCRIPTS------------------>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="script.js"></script>   
+<!--------------SCRIPTS-END------------>
+</body>
+</html>

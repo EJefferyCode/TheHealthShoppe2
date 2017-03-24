@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Welcome | The Health Shoppe</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Harmattan|Patrick+Hand|Rokkitt" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="welcomeName()">
+    <div id="container">
+    <div id="header">
+        <ul>
+           <li><a href="index.html">Home</a></li> <span>|</span>
+            <li><a href="#">Shop</a></li> <span>|</span>
+            <li><a href="#" id="store">Store Locator</a></li>
+            <h5>The Health Shoppe of <span>New York</span> and <span>New Jersey</span></h5>
+            <h4><a href="index.html">Log Out?</a></h4>
+        </ul>
+        </div>
+        
+        <div id="welcome">
+        <!--javascript innerHTML-->
+        </div>
+    </div>
+    
+    <div id="profile">
+       
+        <nav id="photo">
+            <img src="img/img.jpg"/>
+        </nav>
+        <h3>Emily J.</h3>
+        <ul>
+          <li contenteditable="true">Female</li>
+          <li contenteditable="true">Age: 27</li>
+          <li contenteditable="true">New York, N.Y.</li>
+          <li contenteditable="true">Likes: Veggies, Jogging, Music, Concerts</li>
+        </ul>
+        <p>Messages:</p>
+        <select id="mess">
+            <option value="open">Open</option>
+            <option value="closed">Closed</option>
+        </select>
+    </div>
+    
+    <!--Container Begin For Tabs-->
+    <div class="contained">
+    
+        <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1" id="tab1">Dashboard</li>
+        <li class="tab-link" data-tab="tab-2" id="tab2">Messages</li>
+        <li class="tab-link" data-tab="tab-3" id="tab3">Weekly Deals</li>
+        <li class="tab-link" data-tab="tab-4" id="tab4">My Settings</li>
+        </ul>
+    
+        <div id="tab-1" class="tab-content current">
+            <h1>Welcome Back!</h1>
+            
+            <p>Here are your updates for this week:</p>
+            
+            <ul>
+            <li><a href="">Krissy411</a> replied to your <a href="">comment</a> on <i><a href="">Health Advice For Gen Y</a></i></li>
+                                                        <br>
+            <li>Someone liked your photo. <a href="">Click here</a> to see more.</li>
+                                                        <br>
+            
+            <li><a href="">Jenny Sherman</a> just posted a new article <i><a href="">Why Women Should Be Friends With Their Cardiologist</a></i></li>
+                                                        <br>
+                
+            <li>Your <a href="">photo</a> has just been approved!</li>
+            </ul>
+        </div>
+        <div id="tab-2" class="tab-content">
+            <h1>You have <a href="">10</a> New Messages</h1>
+            
+            <ul>
+                <li>From: <a href="">Carrie201</a> <br> Subject: <l><a href="">Hey, I was wondering if you were interested in...[click to see more]</a></l></li> <br>
+                
+                <li>From: <a href="">Darryl J.</a> <br> Subject: <l><a href="">Saw your photo in the members section. [click to see more]</a></l></li><br>
+                
+                <li>From: <a href="">Anabellie</a> <br> Subject: <l><a href="">Emily, are you still coming to the meetup.com group next...[click to see more]</a></l></li><br>
+                
+                <li>From: <a href="">Admin</a> <br> Subject: <l><a href="">Emily, your photo has been approved. [click to see more]</a></l></li><br>
+                
+                <a href="">Load More Messages</a>
+            </ul>
+        </div>
+        <div id="tab-3" class="tab-content">
+        <h1>Greatest Deals Near 11201 <a href="">Click here to change zip code</a></h1> 
+            <hr>
+            <img src="img/bar.jpg"/><br><br>
+            <h2>Available at the <a href="">Soho Store and 3 others</a></h2>
+            <a href="">PowerBar Variety Pack(16 ct)<br>$10.99</a>
+            <hr>
+            <img src="img/vitamin3.jpg"/><br>
+            <h2>Available at the <a href="">Soho Store and 3 others</a></h2>
+            <a href="">NatureMade B-12 Multivitaims(1000mg)<br>$7.99</a>
+            <hr>
+            <img src="img/vitamins2.jpg"/><br>
+            <h2>Available at the <a href="">Soho Store and 3 others</a></h2>
+            <a href="">VitaFusion PreNatal Vitamins<br>$11.95</a>
+        </div>
+        <div id="tab-4" class="tab-content">
+            <p>Change Your Password</p>
+            Old Password <span>: </span><input type="password"><br><br>
+            New Password <span>: </span><input type="password"><br><br>
+            
+            <button type="submit">Confirm</button>
+            <hr>
+            
+            <p>I want email alerts:</p>
+            <select id="alerts">
+                <option>Only On Mobile</option>
+                <option value="daily">Daily</option>
+                <option value="">Weekly</option>
+                <option value="turn off">Turn Off All Notifications</option>
+            </select>
+            <hr>
+            <p>Display my profile photo</p> 
+            
+            Yes <input type="radio"> 
+            No <input type="radio">
+            
+            <p>Allow my profile photo to be available to:</p>
+            <select>
+                <option>Everyone</option>
+                <option>Members only</option>
+                <option>Only those in my network</option>
+            </select>
+            
+            <a href="">Blocked List</a>
+            
+        </div>
+    
+    
+    
+    
+    </div>
+    <!--Container end for tabs-->
+    
+
+    
+    
+    
+    
+    
+    <footer>
+        <div id="wrapper">
+            <ul>
+              <li>The Health Shoppe:Corporate Office New York</li>
+              <li>46 Park Avenue -- 7th Floor</li>
+              <li>New York, NY 10010</li>
+              <li><a href="mailto:nyc@healthshoppe.com">nyc@healthshoppe.com</a></li>
+            </ul>
+            <ul>
+                <li>The Health Shoppe: Corporate Office  New Jersey</li>
+                <li>23 Moore Street - 6th Floor</li>
+                <li>Hoboken, NJ 07080</li>
+                <li><a href="mailto:hoboken@healthshoppe.com">hoboken@healthshoppe.com</a></li>
+            </ul>
+            <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Franchise</a></li>
+            <h4>&copy;The Health Shoppe 2018</h4>
+            </ul>
+        </div>
+    </footer>
+ 
+    
+    <!------------SCRIPTS------------------>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="script.js"></script>   
+<!--------------SCRIPTS-END------------>
+</body>
+</html>
